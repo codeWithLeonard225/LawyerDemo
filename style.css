@@ -1,0 +1,380 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: black;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 15px 30px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Navigation */
+header .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    font-size: 1rem;
+    padding: 10px;
+    font-weight: 500;
+    color: white;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #FFD700;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: white;
+}
+
+/* Home Section */
+.home {
+    width: 100%;
+    min-height: 100vh;
+    padding-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(79, 76, 76);
+    color: white;
+    box-sizing: border-box;
+}
+
+.home_content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+}
+
+.home_content .text {
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+.home_content h1 {
+    font-size: 2.2rem;
+    color: black;
+}
+
+.image img {
+    width: 100%;
+    width: 400px;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* About Section */
+#about {
+    padding: 80px 20px;
+    background: #fff;
+}
+
+
+/* Default Title Styling */
+.title {
+    position: relative;
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 40px;
+    font-weight: 400;
+}
+
+/* Title Underline */
+.title::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 200px;
+    height: 3px;
+    background-color: #FFD700;
+    transform: translateX(-50%);
+}
+
+/* Title Subtitle */
+.title::after {
+    content: "Who We Are";
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    font-size: 20px;
+    color: black;
+    background-color: white;
+    padding: 5px;
+    transform: translateX(-50%);
+}
+
+/* Responsive Title Adjustments */
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 32px; /* Slightly smaller for tablets */
+        margin-bottom: 40px;
+    }
+
+    .title::before {
+        width: 150px; /* Reduce underline size */
+    }
+
+    .title::after {
+        font-size: 16px; /* Reduce subtitle size */
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .title {
+        font-size: 28px; /* Smaller title for phones */
+        margin-bottom: 30px;
+    }
+
+    .title::before {
+        width: 100px; /* Make underline even smaller */
+    }
+
+    .title::after {
+        font-size: 14px; /* Adjust subtitle */
+    }
+}
+
+
+.aboutContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.columLeft {
+    flex: 1;
+    padding: 20px;
+}
+
+.columLeft img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 5px;
+}
+
+.columRight {
+    flex: 1;
+    padding: 20px;
+}
+
+.columRight h1 {
+    font-size: 28px;
+    color: black;
+}
+
+.columRight h1 span {
+    color: #FFD700;
+}
+
+.columRight p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Practice Areas */
+.cta {
+    background: #222;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.service-box {
+    background: white;
+    color: black;
+    padding: 20px;
+    margin: 15px;
+    width: 280px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.service-box:hover {
+    transform: scale(1.05);
+}
+
+.service-box img {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+}
+
+/* Our Lawyers Section */
+.team-section {
+    padding: 80px 20px;
+    background: #f5f5f5;
+    text-align: center;
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.team-member {
+    background: white;
+    padding: 20px;
+    margin: 15px;
+    width: 250px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.team-member img {
+    width: 100%;
+    height: 250px;
+    border-radius: 5px;
+}
+
+.team-member h3 {
+    margin: 10px 0;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-icon {
+    font-size: 1.5rem;
+    margin: 0 5px;
+    color: black;
+    transition: 0.3s;
+}
+
+.social-icon:hover {
+    color: #FFD700;
+}
+/* Footer */
+footer {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: black;
+        padding: 10px 0;
+    }
+
+    /* Show menu when "show" class is added */
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links li {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .home_content .text {
+        max-width: 500px;
+        margin-top: 20px;
+    }
+
+    .aboutContent {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .services-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .home {
+        padding: 40px 15px; /* Reduce padding for better fit */
+        background-color: red;
+    }
+
+    .home_content h1 {
+        font-size: 1.8rem; /* Reduce heading size */
+    }
+
+    .home_content p {
+        font-size: 0.9rem; /* Reduce paragraph size */
+    }
+
+    .image img {
+        max-width: 90%; /* Scale image within screen */
+        height: auto;
+    }
+
+    
+}
