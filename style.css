@@ -367,6 +367,10 @@ footer {
         font-size: 1.8rem; /* Reduce heading size */
     }
 
+    .home_content .text{
+        padding-top: 50px;
+    }
+
     .home_content p {
         font-size: 0.9rem; /* Reduce paragraph size */
     }
@@ -378,3 +382,4 @@ footer {
 
     
 }
+
